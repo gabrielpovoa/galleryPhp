@@ -1,0 +1,3 @@
+when image were dragged
+open a modal to write some title or description to the image
+attach it to the alt attribute and the figcaption
