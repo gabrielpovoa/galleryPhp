@@ -10,16 +10,17 @@
 <body>
 
     <main>
-        <form action="" method="POST" enctype="multipart/form-data">
+        <form action="./actions/upload.php" method="POST" enctype="multipart/form-data">
             <label for="dragNdrop">
-                <input type="file" id="dragNdrop" name="fileUpload" hidden accept="*" />
+                <input type="file" id="dragNdrop" name="fileUpload" hidden accept="image/*" />
                 <div class="dropArea">
                     <img src="assets/dragOrDrop.png" alt="">
                 </div>
+                <input type="submit" value="send">
             </label>
         </form>
         <article>
-            <h1>Gallery</h1>    
+            <h1>Gallery</h1>
             <figure>
                 <img src="https://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRdWHYJFfS758Bf6HEmXis8PL5wIENTGwecp4R5fM2t02DX_7pOFhAMA5CzmYbVW4ml"
                     alt="">
