@@ -51,7 +51,7 @@ main {
     padding: 2rem 5%;
     display: flex;
     flex-wrap: wrap;
-    gap: 7rem;
+    gap: 10rem;
 }
 
 form {
@@ -63,6 +63,8 @@ form {
 form label {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 2rem;
 }
 
@@ -73,6 +75,7 @@ form label input[type="submit"] {
     padding: 1rem;
     border-radius: .4rem;
     cursor: pointer;
+    width: 100%;
 }
 
 .dropArea {
@@ -86,7 +89,6 @@ form label input[type="submit"] {
     border-radius: .4rem;
     border: .4rem #31572C dotted;
     cursor: grab;
-    margin-right: 2rem;
 }
 
 .dropArea:hover {
@@ -113,6 +115,7 @@ h1 {
     top: -5rem;
     left: 0;
     font-weight: bolder;
+    gap: 4rem;
     font-size: 4rem;
 }
 
@@ -128,6 +131,7 @@ figure {
 img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
   
 figcaption {
@@ -137,66 +141,28 @@ figcaption {
     padding: 3px;
     text-align: center;
 }
-.modal {
-    background-color: #F5D547;
-    width: 80%; 
-    max-width: 600px;
-    height: 30rem; 
-    padding: 2rem; 
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    position: fixed; 
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); 
-    color: #000;
-    border-radius: 0.5rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
-    z-index: 9999;
-}
 
-.modal form {
+.description {
+    color: #000;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1rem; 
-    width: 100%;
+    gap: 2rem;
+    align-items: flex-start;
+    justify-content: center;
 }
 
-.modal form label {
-    text-align: center; 
-    font-size: 2rem;
-    color: #000;
-    margin-bottom: 2rem;
-    font-weight: bold;
-}
-
-.modal form input[type="text"]::placeholder{
-    color: #000;
-}
-
-.modal form input[type="text"],
-.modal form input[type="submit"] {
+.description input[type="text"]{
     width: 100%;
     padding: 1.8rem;
     border-radius: 0.25rem;
-    border: 1px solid #FFFFFF; 
+    border: 1px solid #4F772D; 
+    border-radius: .4rem;
     background-color: transparent;
-    color: #ECF0F1; 
+    color: #000; 
 }
-
-.modal form input[type="submit"] {
-    background-color: #1446A0; 
-    cursor: pointer; 
-}
-
-.modal form input[type="submit"]:hover {
-    background-color: #ECF0F1;
-    color: #000;
-}
-
-
 
   
 @media screen and (max-width:450px) {
