@@ -58,6 +58,10 @@ form {
     margin-right: 10rem;
     display: flex;
     flex: 1;
+    height: 100%;
+    overflow: hidden;
+    position: sticky;
+    top: 20px;    
 }
 
 form label {
@@ -166,6 +170,10 @@ figcaption {
 
   
 @media screen and (max-width:450px) {
+    form {
+        position: initial;
+        /* top: 20px;    */
+    }
     article {
         margin-top: 4rem;
         grid-template-columns: 1fr;
