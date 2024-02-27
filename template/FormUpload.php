@@ -64,9 +64,11 @@ if (isset($_FILES['fileUpload']) && isset($_POST['description'])) {
             foreach ($sql as $row):
                 ?>
                 <figure>
-                    <img src="<?= $row['Path'] ?>" alt="<?= $row['Description'] ?>" />
+                    <img src="<?= $row['Path']; ?>" alt="<?= $row['Description']; ?>" />
                     <figcaption>
-                        <?= $row['Description'] ?>
+                        <?= $row['Description']; ?>
+                        -
+                        <?= $row['Date_upload']; ?>
                     </figcaption>
                 </figure>
                 <?php
